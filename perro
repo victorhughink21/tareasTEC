@@ -1,0 +1,29 @@
+ private String nombre;
+    private String raza;
+    private int edad;
+    public perro(){
+     }
+    public perro(String nom, String raz,  int e){
+    this.nombre = nom;
+    this.raza = raz;
+    this.edad = e;
+    }
+    
+    public void comer(){
+    System.out.println("los perros come croquetas DogChow, Pedrege");
+    }
+    public void dormir(){
+    System.out.println("los perros duermen en su cama o su caja");
+    }
+    public void jugar(){
+     System.out.println("Los perros les gusta coerrer o nadar, perseguir la pelota");
+    }
+    public String toString(){
+    StringBuilder cad = new StringBuilder();
+    cad.append("\n\n Nombre del perro: "  +nombre);
+    cad.append("\n Es la raza " + raza + "y tiene" + edad + "años");
+    return cad.toString();
+    }
+   }
+        
+    
